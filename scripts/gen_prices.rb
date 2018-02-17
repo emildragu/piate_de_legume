@@ -2,7 +2,7 @@
 require 'csv'
 
 lang = ARGV[0].to_i
-quotation = [1,4.4638]
+quotation = [1,4.4572]
 currency = ['RON','EUR']
 time = Time.new
 wdays = {
@@ -43,4 +43,5 @@ end
 puts footer[lang]
 if lang == 1 
     puts "BNR EXCHANGE RATE: 1 EUR = #{quotation[lang]} RON"
+    puts "Pentru vorbitorii de Limba Romana, preturile in lei sunt disponibile doar daca aveti setata Limba Romana pe facebook."
 end
